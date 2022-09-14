@@ -13,7 +13,8 @@ import java.util.logging.Logger;
 public class Conexao {
     
    Connection cn = null;
-   String url = "";
+    String url = "jdbc:mysql://localhost:3306/cliente ? user=root&password=";
+   
    public  Connection conexaoBD(){
        try 
             {
@@ -25,5 +26,7 @@ public class Conexao {
              }
         return cn;
    } 
-    
+    public  void closeConexao(){
+        
+    }
 }
